@@ -1,0 +1,583 @@
+@font-face {
+    font-family: 'Muli', sans-serif;
+    src: url('../fonts/Muli-Regular.ttf') format('truetype');
+}
+body{
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Muli', sans-serif !important;
+font-weight: bold !important;
+    
+}
+header{
+    box-shadow: 0px -1px 4px #333333;    
+}
+nav{
+    background: white;
+    box-shadow: 0px 0px 7px #3333331a;
+}
+nav.navbar{
+    padding-bottom: 0.2rem!important;
+    padding-top: 0.2rem!important;
+}
+
+footer{
+    font-size: 0.8em;
+}
+a.nav-item{
+    color: #333;
+}
+
+footer{
+  color: white;
+}
+footer a{
+  color: #bfffff;
+}
+footer a:hover{
+  color: white;
+}
+.bg-white-light {
+    background: rgba(255, 255, 255, 0.82) !important;
+    transition: all ease-in-out 0.2s;
+}
+.button-large{
+    border: 1px solid white;
+    padding: 10px;
+    color: #868e96;
+    background: #e9ecef;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+}
+.button-large:hover{
+    background: #ffffff3d;
+    text-decoration: none;
+}
+.button-large-light{
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all ease-in-out 0.2s;
+}
+.button-large-light:hover{
+    background: #ffffff3d;
+    text-decoration: none;
+}
+.footer-bottom{
+  background: #1c6278;
+    padding: 1em;
+}
+.footer-top{
+  background: #2d4958;  
+}
+.footer-middle{
+    background: url(../img/Productos/footer.png);
+    background-size: cover;
+   padding-top: 5em;
+   color: white;
+}
+.list-group-item{
+    background: transparent !important;
+}
+article:hover .caption{
+    opacity: 1;
+    transform: translateY(-192px);
+    -webkit-transform:translateY(-192px);
+    -moz-transform:translateY(-192px);
+    -ms-transform:translateY(-192px);
+    -o-transform:translateY(-192px);
+}
+
+/*article img{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+    }*/
+    article .caption{
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        top:183px;
+        -webkit-transition:all 0.15s ease-in-out;
+        -moz-transition:all 0.15s ease-in-out;
+        -o-transition:all 0.15s ease-in-out;
+        -ms-transition:all 0.15s ease-in-out;
+        transition:all 0.15s ease-in-out;
+        left: 0;
+    }
+    article .blur{
+        background-color: rgba(0, 0, 0, 0.50);
+        height: 185px;
+        width: 100%;
+        z-index: 5;
+        position: absolute;
+    }
+    article .caption-text h1{
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    article .caption-text{
+        z-index: 10;
+        color: #fff;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        text-align: justify;
+        top: 15px;
+        font-family: 'Khula', sans-serif;
+        
+
+    }
+    article .Contenido{
+        /*box-shadow: 0px 0px 7px #3333331a;*/
+        -webkit-transition:all 0.15s ease-in-out;
+        -moz-transition:all 0.15s ease-in-out;
+        -o-transition:all 0.15s ease-in-out;
+        -ms-transition:all 0.15s ease-in-out;
+        transition:all 0.15s ease-in-out;
+    }
+    section#Productos h3 , section#Productos p{
+        color:#333;
+    }
+    #contenido-carousel{
+     position: absolute; top: 30%;
+ }
+ #Productos article:hover img{
+    /*filter: sepia(1);*/
+    transform: scale(1.025);
+}
+
+#Productos article img{
+    -webkit-transition:all 0.15s ease-in-out;
+    -moz-transition:all 0.15s ease-in-out;
+    -o-transition:all 0.15s ease-in-out;
+    -ms-transition:all 0.15s ease-in-out;
+    transition:all 0.15s ease-in-out;
+}
+#Productos article{
+    border: 20px solid rgba(255, 255, 255, 0);
+    color: #ffffff87;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+#Productos{
+   overflow: hidden;
+
+}
+#Productos  h2.text-center{
+    z-index: 5;
+}
+#Productos article .Contenido:hover {
+    opacity: 1; 
+}
+#Productos article .Contenido{
+    -webkit-transition:all 0.15s ease-in-out;
+    -moz-transition:all 0.15s ease-in-out;
+    -o-transition:all 0.15s ease-in-out;
+    -ms-transition:all 0.15s ease-in-out;
+    transition:all 0.15s ease-in-out;
+    /*background: rgba(255, 255, 255, 1);*/
+}
+#Productos>div:first-child{  
+    color: #333;
+    padding-top: 1%;
+}
+#Productos>div:first-child h2 , #Servicios h2{  
+    font-size: 3em;
+}
+#Servicios{
+    background: url(../img/Productos/middle.png);
+    color: #ffffffb0;
+    padding-top: 4.5rem;
+    background-size: cover;
+    padding-bottom: 4.5rem;
+}
+.carousel-inner .carousel-texto > h3{
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+.carousel-inner .carousel-texto {
+    position: absolute;
+    width: 100% !important;
+    left: -9%;
+    top: 90px;
+    height: 50vh;
+    /*background: #0404044a;*/
+    font-family: 'Roboto', sans-serif;    
+}
+
+.checklist-item-icon{
+    background: #17a2b8;
+    border-radius: 50%;
+    color: white;
+    padding: 4px;
+    margin-right: 8px;
+}
+
+.Retraso {
+    animation-delay:0.3s;
+    -webkit-animation-delay:0.3s;
+}
+.Retraso1 {
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+.Retraso2 {
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+}
+.Retraso3 {
+    animation-delay:3s;
+    -webkit-animation-delay:3s;
+}
+.Retraso4{
+    animation-delay:4s;
+    -webkit-animation-delay:4s;
+}
+.circle{      
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+}
+.line {
+    border-bottom: 2px solid #ffffff87;   
+    height: 50%;
+    width: 45%;
+    position: absolute;
+}
+.list-group a{
+color: #333;
+}
+.Ocultar{
+    visibility: hidden;
+
+}
+.pl-6{
+    padding-left: 6%;
+}
+.pr-6{
+    padding-right: 6%;
+}
+.pl-7{
+    padding-left: 7%;
+}
+.pr-7{
+    padding-right: 7%;
+}
+.pt-7{
+    padding-top: 7%;
+}
+.p-7{
+    padding: 7%;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/Ellipsis.gif') 50% 50% no-repeat rgb(255,255,255);
+}
+.text-shadow{
+    text-shadow: 0px 1px 5px #151414
+}
+
+.cards-basic .col {
+    margin-left: 1%;
+    padding: 1rem 2rem;
+    border: 1px solid #e8ebf0;
+    color: #58595f;
+}
+.feature img {    
+    
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+#Redes {
+    position: relative;
+    height: 3em;
+    line-height: 5em;
+    margin: 0;
+    overflow: hidden;
+}
+#Redes ul.actions {
+    font-size: 2em;
+    position: absolute;
+    left: 0;
+    top: -22px;
+    height: 5em;
+    line-height: 3em;
+    margin: 0;
+    width: 98%;
+}
+#Redes ul.actions li a {
+    padding: 0.5em;
+}
+
+#Redes a {
+    color: inherit;
+    text-decoration: none;
+    transition: all ease-in 0.1s;
+}
+#Redes a:hover {
+    font-size: 1.2em;
+}
+ol, ul {
+    list-style: none;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.col.feature  {
+    background:white;
+    }
+.col.feature:hover  {
+background: #f3f3f3;
+}
+.bg-gray-white h1, .bg-gray-white h2, .bg-gray-white h3, .bg-gray-white h4, .bg-gray-white h5, .bg-gray-white h6, .bg-gray-white p {
+    color: #17a2b8;
+}
+.bg-gray-white {
+    background: #f7f7f7;
+}
+.block-content {
+    max-width: 1120px;
+    padding: 5rem 2rem 5rem 2rem;
+    width: 100%;
+}
+
+/*Sección Productos*/
+
+#Banner-Producto{   
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+#Banner-Producto.Fondo-Administrativo{
+    background: url(../img/Productos/Admin.jpg);   
+    background-size: cover; 
+    background-position: top;   
+}
+#Banner-Producto.Fondo-Nomina{
+    background: url(../img/Productos/Nomina.jpg);  
+    background-size: cover;  
+    background-position: center; 
+    
+}
+#Banner-Producto h1{
+    font-size: 2.8em;
+}
+#Descargas li > i{
+    color: #00a3ba;
+}
+.img-banner-white{
+    position: absolute;
+    bottom: -40px;
+    overflow-y: hidden;
+    right: 123px;
+}
+.img-banner-blue{
+    position: absolute;
+    bottom: -41px;
+    overflow-y: hidden;
+}
+
+#FondoCaracteristicas{
+    background-image: url(../img/Productos/Caracteristicas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#FondoBeneficios{
+    background-image: url(../img/Productos/Beneficios.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#FondoManuales{
+    background-image: url(../img/Productos/Manuales.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#FondoCaracteristicas2{
+    background-image: url(../img/Productos/Caracteristicas2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#FondoBeneficios2{
+    background-image: url(../img/Productos/Beneficios2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#FondoManuales2{
+    background-image: url(../img/Productos/Manuales2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
+    font-size: 2.6em;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .carousel-right{
+           position: absolute !important;
+    bottom: -30px;
+    padding: 3% !important;
+    }
+
+    .carousel-inner .carousel-texto .carousel-link {
+        float: none;
+        position: relative;
+        top:15%;
+    }
+    .carousel-inner .carousel-texto > h3 {    
+    font-size: 1.9em;
+    text-shadow: 0px 0 9px #343a40;
+}
+    .carousel-inner .carousel-texto p {
+        position: relative;
+    font-size: 0.9em;
+    top: 20px;
+    /* right: -10px; */
+    width: 100%;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    /* font-weight: bold; */
+    height: 50v;
+}
+
+   #carousel{
+    margin-top: 15%;
+}
+
+.img-carousel-left {
+        position: relative;
+    top: 100%;
+    max-width: 53%;
+    left: 23%;
+}
+.h-50vh{
+    height: 70vh;
+}
+.carousel-inner .carousel-texto {
+        right: 0;
+    left: 0;
+    position: relative !important;
+    top: 0px;
+    /*background: #0404044a;*/
+    font-family: 'Roboto', sans-serif;
+    height: 40vh;
+    margin-left: 0;
+    padding-top: 0;
+}
+}
+
+@media screen and (max-width: 576px) {
+
+    #Banner-Producto {     
+        padding-top: 21%;        
+        background-position: top;
+    }
+
+    #Banner-Producto #LogoProducto ~ article{     
+        background: rgba(255, 255, 255, 0.63);
+        text-align: justify;
+    }
+    #Banner-Producto #LogoProducto ~ article h1{     
+        text-align: center;
+    }
+    #Descripcion{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .navbar-collapse{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .navbar-light .navbar-toggler {
+        border:none;
+    }
+} 
+
+
+  @media (max-width: 767px) and (orientation : landscape){
+    #Banner-Producto {     
+        padding-top: 21%;        
+        background-position: top;
+    }
+
+    #Banner-Producto #LogoProducto ~ article{     
+        background: rgba(255, 255, 255, 0.63);
+        text-align: justify;
+    }
+    #Banner-Producto #LogoProducto ~ article h1{     
+        text-align: center;
+    }
+    .navbar-collapse{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .navbar-light .navbar-toggler {
+        border:none;
+    }
+  }
+  /* Tablets (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  }
+  
+  /* Tablets (portrait) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  }
+  
+  /* Escritorio y Laptops ----------- */
+  @media only screen and (min-width : 1224px) {
+   
+  }
+  
+  /* Pantallas Grandes ----------- */
+  @media only screen and (min-width : 1824px) {
+  }
+  
+  
+
+@media (min-width: 1281px) {
+  
+  .img-carousel-left{
+  padding-left: 15%;
+    padding-top: 4%;
+    text-align: right;
+}
+}
+@media screen and (min-width: 1200px) {
+  .img-carousel-left {
+   position: relative;
+    left: 26%;
+    width: 54%;
+
+}
+}
+.dropdown-toggle::after {   
+    content: none !important;
+}
