@@ -43,8 +43,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100 lazy h-50vh" src="img/Productos/1.jpg" alt="First slide" style="filter: grayscale(0.5);">
-                        <img class="d-block w-100 animated fadeInLeft h-50vh" style="position: absolute; top: 0" src="img/Productos/blanco.png"
-                            alt="First slide">
+                        <img class="d-block w-100 animated fadeInLeft h-50vh" style="position: absolute; top: 0" src="img/Productos/blanco.png" alt="First slide">
                         <img class="d-block w-100 animated fadeInRight h-50vh Retraso" style="position: absolute; top: 0" src="img/Productos/gris.png"
                             alt="First slide">
                         <div id="contenido-carousel" class="container-fluid">
@@ -70,8 +69,7 @@
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100 lazy h-50vh" src="img/Productos/2.jpg" alt="First slide" style="filter: grayscale(0.5);">
-                        <img class="d-block w-100 animated fadeInLeft h-50vh" style="position: absolute; top: 0" src="img/Productos/blanco.png"
-                            alt="First slide">
+                        <img class="d-block w-100 animated fadeInLeft h-50vh" style="position: absolute; top: 0" src="img/Productos/blanco.png" alt="First slide">
                         <img class="d-block w-100 animated fadeInRight Retraso h-50vh" style="position: absolute; top: 0" src="img/Productos/gris.png"
                             alt="First slide">
                         <div id="contenido-carousel" class="container-fluid">
@@ -142,7 +140,7 @@
                         <a href="Administrativo.html" class="button-large">Saber Más</a>
                     </div>
                 </div>
-                <div class="col feature" >
+                <div class="col feature">
                     <div class="col-xs-12">
                         <h3>Nómina</h3>
                         <img src="http://galac.com/galac/assets/noomina.png" width="140" height="150" alt="Logo Sistema Nómina ">
@@ -201,7 +199,7 @@
             <article class="col-md-6 col-xs-12">
                 <div class="row">
                     <div class="col-md-3 text-center">
-                        <img src="img/Productos/GBILogo.png" alt="" width="120" height="145" class="circle bg-light">
+                        <img class="lazy" data-original="img/Productos/GBILogo.png" alt="" width="120" height="145" class="circle bg-light">
                     </div>
                     <div class="col-md-9">
                         <div class="Contenido text-justify justify-content-center pl-3 pr-3">
@@ -302,11 +300,14 @@
         </div>
     </footer>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>     
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.aniview.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(window).load(function () {
             setTimeout(function () {
                 $(".loader").addClass("animated fadeOut");
             }, 2000);
@@ -325,28 +326,11 @@
         });
     </script>
     <script>
-        // function detectarIE() {
-        //     var ua = window.navigator.userAgent;
-        //     var trident = ua.indexOf('Trident/');
-        //     var msie = ua.indexOf('MSIE ');
-
-        //     if (msie > 0 || trident > 0) {
-        //     }
-        // }
-        // detectarIE();
+        $(function () {
+            $("img.lazy").lazyload();
+        });
     </script>
-    <!-- bxSlider Javascript file
-<script src="/js/jquery.bxslider.min.js"></script>
-<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
-<script>
-    var miEvento = new Hammer(document.getElementById("carouselExampleIndicators"));
-    miEvento.on('swiperight', function (ev) {
-        console.log("has pulsado");
-    });
-    $(document).ready(function () {
-        $('.bxslider').bxSlider();
-    });
-</script> -->
+
 </body>
 
 </html>
