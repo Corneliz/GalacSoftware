@@ -316,12 +316,13 @@
         </div>
     </footer>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>         
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.aniview.js"></script>
 
     <script type="text/javascript">
-        $.when($.ready).then(function () {
+       $(window).load(function () {
             setTimeout(function () {
                 $(".loader").addClass("animated fadeOut");
             }, 1000);
