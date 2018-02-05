@@ -69,6 +69,31 @@ footer a:hover{
     background: #ffffff3d;
     text-decoration: none;
 }
+.button-next{
+    text-align: center;
+    bottom: 40px;
+    position: absolute !important;
+}
+.button-previous{
+    text-align: right;
+    bottom: 40px;
+    position: fixed !important;
+    visibility: hidden;
+}
+.button-next i , .button-previous i{
+    background: #ffffff00;
+    padding: 1%;
+    border: 1px solid #ffffffeb;
+    border-radius: 100%;
+    color: #ffffff;
+    font-size: 1.8em;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+}
 .footer-bottom{
   background: #1c6278;
     padding: 1em;
@@ -147,7 +172,9 @@ article:hover .caption{
         color:#333;
     }
     #contenido-carousel{
-     position: absolute; top: 30%;
+     position: absolute; 
+     top: 30%;
+     top:22vh;
  }
  #Productos article:hover img{
     /*filter: sepia(1);*/
@@ -168,6 +195,7 @@ article:hover .caption{
 }
 #Productos{
    overflow: hidden;
+   padding-bottom: 7rem !important;
 
 }
 #Productos  h2.text-center{
@@ -292,8 +320,8 @@ color: #333;
     text-shadow: 0px 1px 5px #151414
 }
 
-.cards-basic .col {
-    margin-left: 1%;
+.cards-basic .feature {  
+    /* margin-left: 1%; */
     padding: 1rem 2rem;
     border: 1px solid #e8ebf0;
     color: #58595f;
@@ -340,10 +368,10 @@ ol, ul {
     display: none;
 }
 
-.col.feature  {
+.feature  {
     background:white;
     }
-.col.feature:hover  {
+.feature:hover  {
 background: #f3f3f3;
 }
 .bg-gray-white h1, .bg-gray-white h2, .bg-gray-white h3, .bg-gray-white h4, .bg-gray-white h5, .bg-gray-white h6, .bg-gray-white p {
@@ -382,6 +410,9 @@ background: #f3f3f3;
 #Descargas li > i{
     color: #00a3ba;
 }
+/*#Distribuidores:hover img{
+filter:brightness(0.5);
+}*/
 .img-banner-white{
     position: absolute;
     bottom: -40px;
@@ -519,6 +550,11 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     .navbar-light .navbar-toggler {
         border:none;
     }
+    .img-carousel-left {
+        position: relative;
+        left: 26%;
+        width: 54%;
+    }
 } 
 
 
@@ -553,14 +589,24 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
   
   /* Escritorio y Laptops ----------- */
   @media only screen and (min-width : 1224px) {
+    .h-90{
+        max-height: 90vh;
+    }
    
   }
   
   /* Pantallas Grandes ----------- */
   @media only screen and (min-width : 1824px) {
   }
-  
-  
+  @media only screen and (min-width : 2560px) {
+      .carousel-texto, #Productos, #Servicios{
+          font-size: 2em;
+      }
+      .footer-middle{
+          padding-top: 5%;
+      }
+      
+}
 
 @media (min-width: 1281px) {
   
