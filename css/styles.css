@@ -156,7 +156,6 @@ article:hover .caption{
         height: 300px;
         text-align: justify;
         top: 15px;
-        font-family: 'Khula', sans-serif;
         
 
     }
@@ -168,8 +167,14 @@ article:hover .caption{
         -ms-transition:all 0.15s ease-in-out;
         transition:all 0.15s ease-in-out;
     }
-    section#Productos h3 , section#Productos p{
-        color:#333;
+    section#Productos h3{
+        color:#333;        
+    }
+    section#Productos p{
+        font-family: 'Muli', sans-serif;
+        font-size: 1.2em;
+        color: #343434a3;
+        text-align: left;
     }
     #contenido-carousel{
      position: absolute; 
@@ -195,7 +200,7 @@ article:hover .caption{
 }
 #Productos{
    overflow: hidden;
-   padding-bottom: 7rem !important;
+   font-size: 0.95em;
 
 }
 #Productos  h2.text-center{
@@ -322,8 +327,8 @@ color: #333;
 
 .cards-basic .feature {  
     /* margin-left: 1%; */
-    padding: 1rem 2rem;
-    border: 1px solid #e8ebf0;
+    padding: 1rem 3rem;
+    /*border: 1px solid #e8ebf0;*/
     color: #58595f;
 }
 .feature img {    
@@ -368,17 +373,14 @@ ol, ul {
     display: none;
 }
 
-.feature  {
-    background:white;
-    }
 .feature:hover  {
-background: #f3f3f3;
+/*background: #f3f3f3;*/
 }
 .bg-gray-white h1, .bg-gray-white h2, .bg-gray-white h3, .bg-gray-white h4, .bg-gray-white h5, .bg-gray-white h6, .bg-gray-white p {
     color: #17a2b8;
 }
 .bg-gray-white {
-    background: #f7f7f7;
+    background: #fff;
 }
 .block-content {
     max-width: 1120px;
