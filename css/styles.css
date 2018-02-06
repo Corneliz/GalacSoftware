@@ -244,7 +244,7 @@ article:hover .caption{
 .carousel-inner .carousel-texto {
     position: absolute;
     width: 100% !important;
-    max-width: 100vh;
+    max-width: 95vh;
     /* left: -9%; */
     top: 0;
     height: 50vh;
@@ -630,7 +630,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
   
   .img-carousel-left{
   padding-left: 15%;
-    padding-top: 4%;
+    padding-top: 10%;
     text-align: right;
 }
 .carousel-inner .carousel-texto { 
