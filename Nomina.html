@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="loader"></div>
+    <div class="loader animated pulse infinite"></div>
     <nav class="navbar navbar-light navbar-expand-md py-md-2 fixed-top">
         <a class="navbar-brand" href="index.html"><img src="img/galac.png" 
             alt="Gálac" height="30" width="115" ></a>
@@ -329,9 +329,9 @@
     <script type="text/javascript" src="js/jquery.aniview.js"></script>
 
     <script type="text/javascript">
-        $(window).load(function () {
+          $(window).load(function () {
             setTimeout(function () {
-                $(".loader").addClass("animated fadeOut");
+                $(".loader").addClass("fadeOut");
             }, 1000);
             setTimeout(function () {
                 $(".loader").addClass("Ocultar");
