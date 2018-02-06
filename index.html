@@ -39,17 +39,16 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100  h-90 lazy h-50vh" src="img/Productos/1.jpg" alt="First slide" style="filter: grayscale(0.5);">
-                        <img class="d-block w-100  h-90 animated fadeInLeft h-50vh" style="position: absolute; top: 0" src="img/Productos/blanco.png"
-                            alt="First slide">
-                        <img class="d-block w-100  h-90 animated fadeInRight h-50vh Retraso" style="position: absolute; top: 0" src="img/Productos/gris.png"
-                            alt="First slide">
+                        <img class="d-block w-100  h-90 lazy h-50vh filtro-gris" src="img/Productos/1.jpg" alt="First slide">
+                        <img class="d-block w-100  h-90 animated fadeInLeft h-50vh position-absolute t-0" src="img/Productos/blanco.png" alt="First slide">
+                        <img class="d-block w-100  h-90 animated fadeInRight h-50vh Retraso position-absolute t-0" src="img/Productos/gris.png" alt="First slide">
                         <div id="contenido-carousel" class="container-fluid">
                             <div class="row">
-                                <div class="col-md-6 col-xs-12 ">
-                                    <img class="animated fadeInLeft Retraso1 img-carousel-left" src="img/Productos/galacmovildemo.png" alt="First slide">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                                    <img class="animated fadeInLeft Retraso1 img-carousel-left" src="img/Productos/galacmovildemo.png"
+                                        alt="First slide">
                                 </div>
-                                <div class="col-md-6 col-xs-12 carousel-right">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 carousel-right">
                                     <div class="carousel-texto d-block h-50vh w-100  h-90 text-center animated fadeIn Retraso2">
                                         <h3>Gálac Móvil</h3>
                                         <p class="text-shadow text-light">Ahora puedes llevar tu Sistema Administrativo en tu bolsillo, consultar tus reportes
@@ -60,25 +59,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="col-md-12 col-xs-12 button-next">
-                                    <i class="fa fa-chevron-down">
-                                    </i>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100  h-90 lazy h-50vh" src="img/Productos/2.jpg" alt="First slide" style="filter: grayscale(0.5);">
-                        <img class="d-block w-100  h-90 animated fadeInLeft h-50vh" style="position: absolute; top: 0" src="img/Productos/blanco.png"
-                            alt="First slide">
-                        <img class="d-block w-100  h-90 animated fadeInRight Retraso h-50vh" style="position: absolute; top: 0" src="img/Productos/gris.png"
-                            alt="First slide">
+                        <img class="d-block w-100  h-90 lazy h-50vh filtro-gris" src="img/Productos/2.jpg" alt="First slide">
+                        <img class="d-block w-100  h-90 animated fadeInLeft h-50vh position-absolute t-0" src="img/Productos/blanco.png" alt="First slide">
+                        <img class="d-block w-100  h-90 animated fadeInRight Retraso h-50vh position-absolute t-0" src="img/Productos/gris.png" alt="First slide">
                         <div id="contenido-carousel" class="container-fluid">
                             <div class="row">
-                                <div class="col-md-6 col-xs-12">
-                                    <img class="animated fadeInRight Retraso1 img-carousel-left" src="img/Productos/ICOMB.png" width="500" alt="First slide">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                                    <img class="animated fadeInRight Retraso1 img-carousel-left " src="img/Productos/ICOMB.png" width="500" alt="First slide">
                                 </div>
-                                <div class="col-md-6 col-xs-12 carousel-right">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 carousel-right">
                                     <div class="carousel-texto d-block h-50vh w-100  h-90 text-center animated fadeIn Retraso2">
                                         <h3>Proteja su Base de Datos con Mi Backúp</h3>
                                         <p class="text-shadow text-light">Gálac Software le ofrece respaldo automático en la nube, vía internet, y protege
@@ -89,10 +82,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="col-md-12 col-xs-12 button-next">
-                                    <i class="fa fa-chevron-down">
-                                        </i>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -107,13 +96,12 @@
                       <span class="sr-only">Next</span>
                   </a>
                 <div class="col-md-12 col-xs-12 button-next aniview Retraso1" data-av-animation="fadeInDown">
-                    <a href="#Productos"><i class="fa fa-chevron-down">
-                            </i></a>
+                    <a href="#Productos"><i class="fa fa-chevron-down"></i></a>
                 </div>
             </div>
         </article>
     </section>
-    <section id="Productos" class="block bg-gray-white pt-5 aniview" data-av-animation="fadeIn">
+    <section id="Productos" class="block bg-gray-white pt-5">
         <div class="row ">
             <div class="col-md-12 justify-content-center d-flex">
                 <h2 class="text-center pt-4">Productos</h2>
@@ -121,7 +109,7 @@
         </div>
         <div class="row cards-basic text-center">
             <div class="col-lg-6 feature">
-                <div class="row">
+                <div class="row aniview" data-av-animation="fadeInLeft">
                     <div class="col-lg-4">
                         <img src="http://galac.com/galac/assets/admin.png" width="140" height="150" alt="Logo Sistema Administrativo">
                     </div>
@@ -137,7 +125,7 @@
                 </div>
             </div>
             <div class="col-lg-6 feature">
-                <div class="row">
+                <div class="row aniview" data-av-animation="fadeInRight">
                     <div class="col-lg-4">
                         <img src="http://galac.com/galac/assets/noomina.png" width="140" height="150" alt="Logo Sistema Nómina ">
                     </div>
@@ -151,7 +139,7 @@
                 </div>
             </div>
             <div class="col-lg-6 feature">
-                <div class="row">
+                <div class="row aniview" data-av-animation="fadeInLeft">
                     <div class="col-lg-4">
                         <img src="img/Productos/MIBACKUP.png" width="200" height="200" alt="Logo Mi Backúp">
                     </div>
@@ -166,7 +154,7 @@
                 </div>
             </div>
             <div class="col-lg-6 feature">
-                <div class="row">
+                <div class="row aniview" data-av-animation="fadeInRight">
                     <div class="col-lg-4">
                         <img src="img/Productos/GBILogo.png" width="200" height="200" alt="Logo Gálac Móvil">
                     </div>
@@ -193,11 +181,11 @@
         <div class="row pl-7 pr-7 aniview Retraso1" data-av-animation="fadeIn">
             <article class="col-lg-4 col-xs-12">
                 <div class="row">
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-12 text-center">
                         <i class="fa fa-medkit fa-5x text-light"></i>
                     </div>
-                    <div class="col-md-9">
-                        <div class="Contenido text-justify justify-content-center pl-3 pt-3 pr-3">
+                    <div class="col-md-12">
+                        <div class="Contenido text-justify justify-content-center text-center pl-3 pt-3 pr-3">
                             <h5>Plan de Asistencia y Servicio</h5>
                         </div>
                     </div>
@@ -206,11 +194,11 @@
             <div class="visible-xs"><br></div>
             <article class="col-lg-4 col-xs-12">
                 <div class="row">
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-12 text-center">
                         <i class="fa fa-phone fa-5x text-light"></i>
                     </div>
-                    <div class="col-md-9">
-                        <div class="Contenido text-justify justify-content-center pl-3 pt-3 pr-3">
+                    <div class="col-md-12">
+                        <div class="Contenido text-justify justify-content-center pl-3 pt-3 pr-3 text-center">
                             <h5>Soporte Técnico</h5>
                         </div>
                     </div>
@@ -219,11 +207,11 @@
             <div class="visible-xs"><br></div>
             <article class="col-lg-4 col-xs-12">
                 <div class="row">
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-12 text-center">
                         <i class="fa fa-book fa-5x text-light"></i>
                     </div>
-                    <div class="col-md-9">
-                        <div class="Contenido text-left justify-content-center pl-3 pt-3 pr-3">
+                    <div class="col-md-12">
+                        <div class="Contenido text-left justify-content-center pl-3 pt-3 pr-3 text-center">
                             <h5>Cursos<small>(Virtuales y Presenciales)</small></h5>
                         </div>
                     </div>

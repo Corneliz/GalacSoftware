@@ -110,6 +110,9 @@ footer a:hover{
 .list-group-item{
     background: transparent !important;
 }
+.t-0{
+    top: 0;
+}
 article:hover .caption{
     opacity: 1;
     transform: translateY(-192px);
@@ -179,7 +182,7 @@ article:hover .caption{
     #contenido-carousel{
      position: absolute; 
      top: 30%;
-     top:22vh;
+     top: 20%;
  }
  #Productos article:hover img{
     /*filter: sepia(1);*/
@@ -232,7 +235,7 @@ article:hover .caption{
     padding-bottom: 4.5rem;
 }
 .carousel-inner .carousel-texto > h3{
-    font-size: 3.5em;
+    font-size: 3em;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -241,13 +244,14 @@ article:hover .caption{
 .carousel-inner .carousel-texto {
     position: absolute;
     width: 100% !important;
-    left: -9%;
-    top: 90px;
+    max-width: 100vh;
+    /* left: -9%; */
+    top: 0;
     height: 50vh;
-    /*background: #0404044a;*/
-    font-family: 'Roboto', sans-serif;    
+    /* background: #0404044a; */
+    font-family: 'Roboto', sans-serif;
 }
-
+ 
 .checklist-item-icon{
     background: #17a2b8;
     border-radius: 50%;
@@ -280,6 +284,9 @@ article:hover .caption{
     border-radius: 100px;
     height: 150px;
     width: 150px;
+}
+.filtro-gris{
+    filter: grayscale(0.5);
 }
 .line {
     border-bottom: 2px solid #ffffff87;   
@@ -476,7 +483,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
 
 @media (min-width: 320px) and (max-width: 480px) {
     .carousel-right{
-           position: absolute !important;
+    position: absolute !important;
     bottom: -30px;
     padding: 3% !important;
     }
@@ -491,13 +498,11 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     text-shadow: 0px 0 9px #343a40;
 }
     .carousel-inner .carousel-texto p {
-        position: relative;
+    position: relative;
     font-size: 0.9em;
     top: 20px;
-    /* right: -10px; */
     width: 100%;
     font-family: 'Encode Sans Expanded', sans-serif;
-    /* font-weight: bold; */
     height: 50v;
 }
 
@@ -509,21 +514,23 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
         position: relative;
     top: 100%;
     max-width: 53%;
-    left: 23%;
+    /*left: 23%;*/
 }
 .h-50vh{
     height: 70vh;
 }
 .carousel-inner .carousel-texto {
-        right: 0;
+    right: 0;
     left: 0;
     position: relative !important;
     top: 0px;
-    /*background: #0404044a;*/
     font-family: 'Roboto', sans-serif;
     height: 40vh;
     margin-left: 0;
     padding-top: 0;
+}
+#contenido-carousel {    
+    top: 35% !important;
 }
 }
 
@@ -554,8 +561,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     }
     .img-carousel-left {
         position: relative;
-        left: 26%;
-        width: 54%;
+        width: 39% !important;
     }
 } 
 
@@ -580,6 +586,10 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     .navbar-light .navbar-toggler {
         border:none;
     }
+    .img-carousel-left {               
+         width: 30% !important;
+         
+     }
   }
   /* Tablets (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -587,16 +597,19 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
   
   /* Tablets (portrait) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  }
-  
-  /* Escritorio y Laptops ----------- */
-  @media only screen and (min-width : 1224px) {
-    .h-90{
-        max-height: 90vh;
+    .img-carousel-left {
+        position: relative;
+         left: 30px;   
+     }
     }
+  /* Escritorio y Laptops ----------- */
+  @media only screen and (min-width : 1224px) {    
    
   }
-  
+  .h-90{
+    max-height: 90vh;
+    height: 90vh;
+}
   /* Pantallas Grandes ----------- */
   @media only screen and (min-width : 1824px) {
   }
@@ -617,15 +630,21 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     padding-top: 4%;
     text-align: right;
 }
+.carousel-inner .carousel-texto { 
+    top: 34%;
+}
 }
 @media screen and (min-width: 1200px) {
   .img-carousel-left {
-   position: relative;
-    left: 26%;
-    width: 54%;
+   position: relative; 
+    width: 63%;
 
 }
 }
 .dropdown-toggle::after {   
     content: none !important;
+}
+  .img-carousel-left {
+    position: relative;
+    width: 60%;
 }
