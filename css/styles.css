@@ -328,7 +328,7 @@ color: #333;
         height: 100%;
         z-index: 9999;
         background: url(../img/galacloader.png) 50% 50% no-repeat rgb(241, 241, 241);       
-        animation-duration: 1.5s !important;
+        animation-duration: 1.3s !important;
 
 }
 .text-shadow{
