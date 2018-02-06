@@ -282,6 +282,16 @@ article:hover .caption{
     animation-delay:4s;
     -webkit-animation-delay:4s;
 }
+.rowfafari{
+    
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    }
 .circle{      
     border-radius: 100px;
     height: 150px;
