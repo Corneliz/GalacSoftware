@@ -87,7 +87,7 @@ color: white;
 .button-next i , .button-previous i{
     background: #ffffff00;
     padding: 1%;
-    border: 1px solid #ffffffeb;
+    border: 1px solid rgba(255, 255, 255, 0.92);
     border-radius: 100%;
     color: #ffffff;
     font-size: 1.8em;
@@ -180,7 +180,7 @@ article:hover .caption{
     section#Productos p{
         font-family: 'Muli', sans-serif;
         font-size: 1.2em;
-        color: #343434a3;
+        color: rgba(51, 51, 51, 0.74);
         text-align: left;
     }
     #contenido-carousel{
@@ -233,14 +233,14 @@ article:hover .caption{
 }
 #Servicios{
     background: url(../img/Productos/middle.png);
-    color: #ffffffb0;
+    color: rgba(255, 255, 255, 0.64);
     padding-top: 4.5rem;
     background-size: cover;
     padding-bottom: 4.5rem;
 }
 .carousel-inner .carousel-texto > h3{
     font-size: 3em;
-    color: white;
+    color: rgba(255, 255, 255, 0.92);
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 
@@ -248,11 +248,9 @@ article:hover .caption{
 .carousel-inner .carousel-texto {
     position: absolute;
     width: 100% !important;
-    max-width: 95vh;
-    /* left: -9%; */
+    /*max-width: 95vh;    *//*IE */
     top: 0;
     height: 50vh;
-    /* background: #0404044a; */
     font-family: 'Roboto', sans-serif;
 }
  
@@ -290,7 +288,8 @@ article:hover .caption{
     width: 150px;
 }
 .filtro-gris{
-    filter: grayscale(0.5);
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
 }
 .line {
     border-bottom: 2px solid #ffffff87;   
@@ -338,7 +337,10 @@ color: #333;
 .text-shadow{
     text-shadow: 0px 1px 5px #151414
 }
-
+.w-100{
+    width: 100%;
+    
+}
 .cards-basic .feature {  
     /* margin-left: 1%; */
     padding: 1rem 3rem;
@@ -584,6 +586,10 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
         position: relative;
         width: 39% !important;
     }
+    .h-90{  
+        min-height:90%; 
+        height: 90vh;
+    }
 } 
 
 
@@ -611,6 +617,10 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
          width: 30% !important;
          
      }
+     .h-90{  
+        min-height:90%; 
+        height: 90vh;
+    }
   }
   /* Tablets (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -627,9 +637,9 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
   @media only screen and (min-width : 1224px) {    
    
   }
-  .h-90{
-    max-height: 90vh;
-    height: 90vh;
+  .h-90{  
+    min-height:90%; 
+    /*height: 90vh;*/
 }
   /* Pantallas Grandes ----------- */
   @media only screen and (min-width : 1824px) {
