@@ -44,6 +44,10 @@ footer a:hover{
     background: rgba(255, 255, 255, 0.82) !important;
     transition: all ease-in-out 0.2s;
 }
+.bg-green-blue{
+background: #01a3ba;
+color: white;
+}
 .button-large{
     border: 1px solid white;
     padding: 10px;
@@ -474,6 +478,20 @@ filter:brightness(0.5);
 }
 #FondoManuales2{
     background-image: url(../img/Productos/Manuales2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#FondoCorporativo{
+    background-image: url(../img/Productos/Corporativo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#FondoNosExpandimos{
+    background-image: url(../img/Peru.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
