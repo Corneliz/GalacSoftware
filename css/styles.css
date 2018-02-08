@@ -547,10 +547,9 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
 }
 
 .img-carousel-left {
-        position: relative;
-    top: 100%;
+    position: relative;
+    top: 150%;
     max-width: 53%;
-    /*left: 23%;*/
 }
 .h-50vh{
     height: 70vh;
