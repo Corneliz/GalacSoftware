@@ -659,7 +659,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
    
   }
   .h-90{  
-    min-height:90%; 
+    min-height:90vh; 
     height: 90%;
 }
   /* Pantallas Grandes ----------- */
