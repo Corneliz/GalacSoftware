@@ -563,6 +563,9 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
 .h-50vh{
     height: 70vh;
 }
+.h-100{
+   height: 100%;
+}
 .carousel-inner .carousel-texto {
     right: 0;
     left: 0;
@@ -689,8 +692,11 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
 @media screen and (min-width: 1200px) {
   .img-carousel-left {
    position: relative; 
-    width: 63%;
+    width: 63%;  
 
+}
+.carousel-texto{
+padding-right: 3em;
 }
 }
 .dropdown-toggle::after {   
