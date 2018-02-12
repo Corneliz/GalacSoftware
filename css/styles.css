@@ -208,6 +208,7 @@ article:hover .caption{
 #Productos{
  
    font-size: 0.95em;
+   overflow-x: hidden;
 
 }
 #Productos  h2.text-center{
@@ -603,10 +604,12 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
         position: relative;
         width: 39% !important;
     }
-    /* .h-90{  
+     .h-90{  
         min-height:90%; 
         height: 90vh;
-    } */
+        min-height: 90vh;
+        height: 100%;
+    }
 } 
 
 
@@ -694,6 +697,20 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
 padding-right: 3em;
 }
 
+
+}
+.dropdown-toggle::after {   
+    content: none !important;
+}
+  .img-carousel-left {
+    position: relative;
+    width: 60%;
+}
+/*@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+ 
+  @media {
+    
 .flexthis.container:before,
 .flexthis.container:after,
 .flexthis.row:before,
@@ -716,12 +733,33 @@ padding-right: 3em;
     display: -ms-flexbox;
     display: flex;
   } 
+
+  }
+}*/
+@media screen and (min-width: 1200px) and (min-color-index:0) 
+and(-webkit-min-device-pixel-ratio:0) { 
+    @media
+{
+    ..flexthis.container:before,
+.flexthis.container:after,
+.flexthis.row:before,
+.flexthis.row:after {
+   content: normal;
 }
-.dropdown-toggle::after {   
-    content: none !important;
-}
-  .img-carousel-left {
-    position: relative;
-    width: 60%;
-}
- 
+.flexthis{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flexthis .col-md-4 , .flexthis .col-lg-6 , .flexthis .col-lg-4{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}}
