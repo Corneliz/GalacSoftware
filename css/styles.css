@@ -520,11 +520,16 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .carousel-right{
+    /*.carousel-right{
     position: absolute !important;
     bottom: -30px;
     padding: 3% !important;
-    }
+    }*/
+    .carousel-right {
+    position: relative !important;
+    bottom: 55px;
+    padding: 3% !important;
+}
 
     .carousel-inner .carousel-texto .carousel-link {
         float: none;
@@ -548,12 +553,19 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     margin-top: 15%;
 }
 
-.img-carousel-left {
+/*.img-carousel-left {
     position: relative;
     top: 150%;
     max-width: 53%;
-    /*left: 23%;*/
+    left: 23%;
+}*/
+.img-carousel-left {
+    position: absolute;
+    top: -70px;
+    max-width: 53%;
+    /* left: 23%; */
 }
+
 .h-50vh{
     height: 70vh;
 }
