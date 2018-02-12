@@ -360,24 +360,17 @@ max-width: 100%;
     transition: all .5s;
 }
 #Redes {
-    position: relative;
-    height: 3em;
+   position: relative;
     line-height: 5em;
     margin: 0;
     overflow: hidden;
 }
 #Redes ul.actions {
-    font-size: 2em;
-    position: absolute;
-    left: 0;
+        font-size: 2.5em;
     top: -22px;
-    height: 5em;
-    line-height: 3em;
-    margin: 0;
-    width: 98%;
 }
 #Redes ul.actions li a {
-    padding: 0.5em;
+    padding: 0.2em 1em;
 }
 
 #Redes a {
@@ -455,7 +448,6 @@ filter:brightness(0.5);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 #FondoDistribuidor{
@@ -463,56 +455,48 @@ filter:brightness(0.5);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 #FondoBeneficios{
     background-image: url(../img/Productos/Beneficios.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 #FondoManuales{
     background-image: url(../img/Productos/Manuales.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 #FondoCaracteristicas2{
     background-image: url(../img/Productos/Caracteristicas2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 #FondoBeneficios2{
     background-image: url(../img/Productos/Beneficios2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 #FondoManuales2{
     background-image: url(../img/Productos/Manuales2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 #FondoCorporativo{
     background-image: url(../img/Productos/Corporativo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 #FondoNosExpandimos{
     background-image: url(../img/Peru.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     font-size: 2.6em;
@@ -752,7 +736,7 @@ padding-right: 3em;
 and(-webkit-min-device-pixel-ratio:0) { 
     @media
 {
-    ..flexthis.container:before,
+    .flexthis.container:before,
 .flexthis.container:after,
 .flexthis.row:before,
 .flexthis.row:after {
@@ -775,3 +759,59 @@ and(-webkit-min-device-pixel-ratio:0) {
     display: flex;
   }
 }}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+         -o-transition:      -o-transform .6s ease-in-out;
+            transition:         transform .6s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+    .flexthis.container:before,
+.flexthis.container:after,
+.flexthis.row:before,
+.flexthis.row:after {
+   content: normal;
+}
+.flexthis{
+    display: -webkit-box !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .flexthis .col-md-4 , .flexthis .col-lg-6 , .flexthis .col-lg-4{
+    display: -webkit-box !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bg-attachment-fixed{    
+   background-attachment: fixed; !important;
+}
