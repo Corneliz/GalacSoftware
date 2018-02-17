@@ -622,6 +622,9 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     #Banner-Producto #LogoProducto ~ article h1{     
         text-align: center;
     }
+    #contenido-carousel {        
+        font-size: 0.8em;
+    }
     .navbar-collapse{
         text-align: center;
         font-size: 1.5em;
@@ -630,13 +633,17 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
         border:none;
     }
     .img-carousel-left {               
-         width: 30% !important;
+         width: 60% !important;
          
      }
      /* .h-90{  
         min-height:90%; 
         height: 90vh;
     } */
+
+    .carousel-inner .carousel-texto {
+        left: 0;
+    }
   }
   /* Tablets (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
