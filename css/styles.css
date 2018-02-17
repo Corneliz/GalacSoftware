@@ -635,11 +635,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     .img-carousel-left {               
          width: 60% !important;
          
-     }
-     /* .h-90{  
-        min-height:90%; 
-        height: 90vh;
-    } */
+     }     
 
     .carousel-inner .carousel-texto {
         left: 0;
@@ -647,6 +643,18 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
   }
   /* Tablets (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+      
+    .carousel-inner .carousel-texto {
+        left: 0;
+    }
+    #LogoGalacMovil{
+        width: 180px;
+        height: 150px;
+    }
+    #LogoMiBackup{
+        width: 150px;
+        height: 150px;
+    }
   }
   
   /* Tablets (portrait) ----------- */
