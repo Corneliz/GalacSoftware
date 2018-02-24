@@ -1,10 +1,10 @@
 $(window).load(function () {
     setTimeout(function () {
         $(".loader").addClass("fadeOut");
-    }, 1000);
+    }, 500);
     setTimeout(function () {
         $(".loader").addClass("Ocultar");
-    }, 1500);
+    }, 800);
     $('.aniview').AniView();
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
     } else {
