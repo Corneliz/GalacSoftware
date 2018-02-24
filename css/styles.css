@@ -234,7 +234,8 @@ article:hover .caption{
     font-size: 3em;
 }
 #Servicios{
-    background: url(../img/Productos/middle.png);
+    /*background: url(../img/Productos/middle.png);*/
+    background :#01a3ba;
     color: rgba(255, 255, 255, 0.64);
     padding-top: 4.5rem;
     background-size: cover;
