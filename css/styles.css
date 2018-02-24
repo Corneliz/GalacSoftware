@@ -94,10 +94,13 @@ color: white;
 .button-next i , .button-previous i{
     background: #ffffff00;
     padding: 1%;
-    border: 1px solid rgba(255, 255, 255, 0.92);
+    border: 2px solid rgba(255, 255, 255, 0.92);
     border-radius: 100%;
     color: #ffffff;
     font-size: 1.8em;
+}
+.cursor-pointer{
+    cursor: pointer;
 }
 .font-16{
     font-size: 16px;
@@ -133,12 +136,6 @@ article:hover .caption{
     -o-transform:translateY(-192px);
 }
 
-/*article img{
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    z-index: 4;
-    }*/
     article .caption{
         cursor: pointer;
         position: absolute;
@@ -174,7 +171,6 @@ article:hover .caption{
 
     }
     article .Contenido{
-        /*box-shadow: 0px 0px 7px #3333331a;*/
         -webkit-transition:all 0.15s ease-in-out;
         -moz-transition:all 0.15s ease-in-out;
         -o-transition:all 0.15s ease-in-out;
@@ -196,7 +192,6 @@ article:hover .caption{
      top: 20%;
  }
  #Productos article:hover img{
-    /*filter: sepia(1);*/
     transform: scale(1.025);
 }
 
@@ -230,7 +225,6 @@ article:hover .caption{
     -o-transition:all 0.15s ease-in-out;
     -ms-transition:all 0.15s ease-in-out;
     transition:all 0.15s ease-in-out;
-    /*background: rgba(255, 255, 255, 1);*/
 }
 #Productos>div:first-child{  
     color: #333;
@@ -256,7 +250,6 @@ article:hover .caption{
 .carousel-inner .carousel-texto {
     position: absolute;
     width: 100% !important;
-    /*max-width: 95vh;    *//*IE */
     top: 0;
     height: 50vh;
     font-family: 'Roboto', sans-serif;
@@ -356,9 +349,7 @@ color: #333;
 max-width: 100%;
 }
 .cards-basic .feature {  
-    /* margin-left: 1%; */
     padding: 1rem 3rem;
-    /*border: 1px solid #e8ebf0;*/
     color: #58595f;
 }
 .feature img {    
@@ -396,9 +387,6 @@ ol, ul {
     display: none;
 }
 
-.feature:hover  {
-/*background: #f3f3f3;*/
-}
 .bg-gray-white h1, .bg-gray-white h2, .bg-gray-white h3, .bg-gray-white h4, .bg-gray-white h5, .bg-gray-white h6, .bg-gray-white p {
     color: #17a2b8;
 }
@@ -410,8 +398,6 @@ ol, ul {
     padding: 5rem 2rem 5rem 2rem;
     width: 100%;
 }
-
-/*Sección Productos*/
 
 #Banner-Producto{   
     position: relative;
@@ -435,9 +421,7 @@ ol, ul {
 #Descargas li > i{
     color: #00a3ba;
 }
-/*#Distribuidores:hover img{
-filter:brightness(0.5);
-}*/
+
 .img-banner-white{
     position: absolute;
     bottom: -40px;
@@ -510,12 +494,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
-    /*.carousel-right{
-    position: absolute !important;
-    bottom: -30px;
-    padding: 3% !important;
-    }*/
+@media (min-width: 320px) and (max-width: 480px) {   
     .carousel-right {
     position: relative !important;
     bottom: 55px;
@@ -544,17 +523,10 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     margin-top: 15%;
 }
 
-/*.img-carousel-left {
-    position: relative;
-    top: 150%;
-    max-width: 53%;
-    left: 23%;
-}*/
 .img-carousel-left {
     position: absolute;
-    top: -70px;
+    bottom: 115px;
     max-width: 53%;
-    /* left: 23%; */
 }
 
 .h-50vh{
@@ -567,7 +539,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     right: 0;
     left: 0;
     position: relative !important;
-    top: 0px;
+    top: -45px;
     font-family: 'Roboto', sans-serif;
     height: 40vh;
     margin-left: 0;
@@ -648,7 +620,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
         left: 0;
     }
   }
-  /* Tablets (portrait and landscape) ----------- */
+
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
       
     .carousel-inner .carousel-texto {
@@ -664,24 +636,15 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     }
   }
   
-  /* Tablets (portrait) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     .img-carousel-left {
         position: relative;
          left: 30px;   
      }
     }
-  /* Escritorio y Laptops ----------- */
   @media only screen and (min-width : 1224px) {    
    
   }
-  /* .h-90{  
-    min-height:90vh; 
-    -webkit-height: 90vh;
-    -ms-height: 90%;
-    
-} */
-  /* Pantallas Grandes ----------- */
   @media only screen and (min-width : 1824px) {
   }
   @media only screen and (min-width : 2560px) {
