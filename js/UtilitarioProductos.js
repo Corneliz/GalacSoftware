@@ -8,7 +8,7 @@ $(window).scroll(function () {
     }
 });
 $(document).ready(function () {
-    $('a[href^="#Banner-Producto""]').click(function () {
+    $('a[href^="#Banner-Producto"]').click(function () {
         var destino = $(this.hash);
         if (destino.length == 0) {
             destino = $('a[name="' + this.hash.substr(1) + '"]');
@@ -25,11 +25,11 @@ $(document).ready(function () {
     setTimeout(function () {
         $(".loader").addClass("Ocultar");
     }, 300);
-    $('.aniview').AniView();
     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
     } else {
         $("article.FondoImg").addClass("bg-attachment-fixed");
     }
+    $('.aniview').AniView();
 });
 $(".rotate").click(function () {
     var vIconoDesplegar = $(this).find("i");
