@@ -313,6 +313,9 @@ color: #333;
 .p-7{
     padding: 7%;
 }
+.p-9{
+    padding: 9%;
+}
 .loader {
   
         position: fixed;
@@ -433,9 +436,9 @@ ol, ul {
 
 #FondoDistribuidor{
     background-image: url(../img/Productos/Distribuidor.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:center;
 }
 #FondoBeneficios{
     background-image: url(../img/Productos/Beneficios.jpg);
@@ -633,7 +636,9 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
      }
     }
   @media only screen and (min-width : 1224px) {    
-   
+    #FondoDistribuidor {        
+        background-position-y: -109px;
+    }
   }
   @media only screen and (min-width : 1824px) {
   }
