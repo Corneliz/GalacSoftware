@@ -31,7 +31,7 @@ footer{
   color: white;
 }
 footer a{
-  color: #bfffff;
+  color: rgb(191, 255, 255);
 }
 footer a:hover{
   color: white;
@@ -47,7 +47,7 @@ color: white;
 .button-large{
     border: 1px solid white;
     padding: 10px;
-    color: #868e96;
+    color: rgb(134, 142, 150);
     background: #e9ecef;
     text-decoration: none;
     font-weight: bold;
@@ -81,7 +81,7 @@ color: white;
     visibility: hidden;
 }
 .button-next i , .button-previous i{
-    background: #ffffff00;
+    background: #FFFFFF;
     padding: 1%;
     border: 2px solid rgba(255, 255, 255, 0.92);
     border-radius: 100%;
@@ -193,7 +193,7 @@ article:hover .caption{
 }
 #Productos article{
     border: 20px solid rgba(255, 255, 255, 0);
-    color: #ffffff87;
+    color: rgba(255, 255, 255, 0.52);
     font-family: 'Encode Sans Expanded', sans-serif;
 }
 #Productos{
@@ -223,7 +223,6 @@ article:hover .caption{
     font-size: 3em;
 }
 #Servicios{
-    /*background: url(../img/Productos/middle.png);*/
     background :#01a3ba;
     color: rgba(255, 255, 255, 0.64);
     padding-top: 4.5rem;
@@ -385,6 +384,9 @@ ol, ul {
 }
 .bg-gray-white {
     background: #fff;
+}
+.bg-gray{
+    background: rgba(188, 226, 251, 0.16);
 }
 .block-content {
     max-width: 1120px;
@@ -637,7 +639,7 @@ section#Caracteristicas h2 , section#Beneficios h2 , section#Manuales h2{
     }
   @media only screen and (min-width : 1224px) {    
     #FondoDistribuidor {        
-        background-position-y: -109px;
+        background-position-y: -245px;
     }
   }
   @media only screen and (min-width : 1824px) {
@@ -785,7 +787,7 @@ and(-webkit-min-device-pixel-ratio:0) {
     border-bottom: 1px solid #c6cfd4;
     padding: 5px 15px 5px 15px;
     font-weight: 700;
-    background: #17a2b8;
+    background: rgb(23, 163, 184);
     color: white;
 }
 .icono-desplegar{
